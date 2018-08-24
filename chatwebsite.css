@@ -1,0 +1,209 @@
+
+img
+{
+  display: inline;
+
+}
+
+body {
+  /* background-image: url("palm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+   background-size: cover; */
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #F4E7AF;
+  font-size: 24px;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  /* color: #; */
+  text-align: center;
+}
+
+h1 {
+  display: block;
+  float: center;
+  text-align:center;
+  margin: 40px 0px;
+  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+}
+#logo{
+  display:inline-block;
+  float: left;
+}
+
+h3 {
+  font-size: 24px;
+  color: #424547;
+}
+
+p {
+ font-size: 18px;
+}
+#header
+{
+  display: inline-block;
+  float: center;
+  text-align: center;
+}
+
+
+
+
+
+h4{
+  text-align:center;
+}
+
+#changehotlinenumberfont
+{
+  font-size: 18px;
+}
+h5
+{
+  text-align: center;
+}
+
+nav
+{
+  display: block;
+  width: 100%;
+  background: #F49797; /* the pink color of the long bar*/
+  text-align: center;
+}
+ul
+{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+ul li
+{
+  list-style: none;
+  display: inline-block;
+  padding:20px;
+
+}
+ul li:hover
+{
+  background:#85BBF6; /* The hover color */
+}
+ul li a
+{
+  color: #000000; /* text color on nav */
+  text-decoration: none;
+
+}
+.toggle
+{
+  width: 100%;
+  padding: 10px 20px;
+  background:#001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+
+}
+@media(max-width: 768px)
+ {
+  toggle
+  {
+    display: block;
+  }
+
+ul
+{
+  width: 100%;
+  display: none
+
+}
+ul li
+{
+  display: block;
+  text-align: center;
+}
+.active
+  {
+  background-color: #C8C3C1;
+  display: block;
+  }
+}
+
+input {
+  font-size: 24px;
+}
+
+input[type=text] {
+  color: #424547;
+  border: 1px solid #c2c2c2;
+  background-color: white;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Chat */
+#contain {
+  display: block;
+  width: 40%;
+  margin-left: 20%;
+}
+#messagesDiv {
+  background-color: white;
+  overflow: auto;
+  height: 400px;
+  width: 150%;
+  padding: 10px;
+  border: 8px solid #424547;
+  margin-bottom: 5px;
+  text-align: left;
+  justify-content: center;
+}
+
+#nameInput {
+  align-items: center;
+  width:30%;
+}
+
+#messageInput {
+  align-items: center;
+  width: 68%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    background-color: #eee;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #B0D2F8;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

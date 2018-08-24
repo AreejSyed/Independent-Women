@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Chat</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Satisfy" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCrd12Vaj3P9bxkc_-sIX7fzyNR5haELKM",
+    authDomain: "chatwebsite-c36d9.firebaseapp.com",
+    databaseURL: "https://chatwebsite-c36d9.firebaseio.com",
+    projectId: "chatwebsite-c36d9",
+    storageBucket: "chatwebsite-c36d9.appspot.com",
+    messagingSenderId: "253889256415"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="chatwebsite.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="allofthecss.css">
+    <link rel="stylesheet" href="chatwebsite.css">
+
+
+
+  </head>
+
+  <body>
+    <div style="display:block;">
+      <img src="logo.png" width= "100px" height="100px" id="logo">
+      <center><h1 id="header">Independent Women </h1> </center>
+    </div>
+    <nav>
+        <div class="toggle">
+          <i class ="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+
+          <div class="dropdown"><li><a>Selfcare</a></li>
+             <div class="dropdown-content">
+               <a href="pyhsicalhealth.html"> Physical Health</a>
+
+                <a href="abuse.html"> Resources for Help </a>
+              </div>
+
+          </div>
+          <div class="dropdown"><li><a>Opportunities</a></li>
+             <div class="dropdown-content">
+               <a href="opp_teens.html"> Opportunities for Teens </a>
+                <a href="opp_adults.html"> Opportunities for College Students</a>
+              </div>
+
+          </div>
+          <li><a href="aboutus2.html">About Us </a></li>
+          <li><a href="chatwebsite.html">Livechat</a>
+
+
+        </ul>
+      </nav>
+      <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+          })
+        })
+      </script>
+
+<br>
+<br>
+<br>
+<br>
+
+  <div id="contain">
+    <div id="messagesDiv"></div>
+
+    <input type="text" id="nameInput" placeholder="Name" />
+    <input type="text" id="messageInput" placeholder="Message..." />
+  </div>
+  </body>
+</html>
